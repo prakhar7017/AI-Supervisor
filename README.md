@@ -67,7 +67,21 @@ To test the voice agent:
 
 ## Project Structure
 
-FrontDesk/ ├── server/ │ ├── index.js # Express server │ ├── models/ # MongoDB schemas │ ├── routes/ # API routes │ ├── services/ # Business logic │ └── agents/ # LiveKit voice agent ├── client/ │ ├── src/ │ │ ├── components/ # React components │ │ ├── pages/ # Page components │ │ ├── services/ # API clients │ │ └── types/ # TypeScript types │ └── package.json └── package.json
+FrontDesk/
+├── server/
+│ ├── index.js # Express server
+│ ├── models/ # MongoDB schemas
+│ ├── routes/ # API routes
+│ ├── services/ # Business logic
+│ └── agents/ # LiveKit voice agent
+├── client/
+│ ├── src/
+│ │ ├── components/ # React components
+│ │ ├── pages/ # Page components
+│ │ ├── services/ # API clients
+│ │ └── types/ # TypeScript types
+│ └── package.json
+└── package.json
 
 ## License
 
