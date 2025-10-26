@@ -1,0 +1,37 @@
+{
+  "name": "frontdesk-ai-receptionist",
+  "version": "1.0.0",
+  "description": "AI Receptionist with LiveKit voice integration and supervisor escalation",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server:dev": "nodemon --exec ts-node server/index.ts",
+    "server:build": "tsc -p tsconfig.json",
+    "server:start": "node dist/index.js",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd client && npm install",
+    "build": "npm run server:build && cd client && npm run build"
+  },
+  "keywords": ["livekit", "ai", "receptionist", "voice"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "livekit-server-sdk": "^2.0.5",
+    "@livekit/agents": "^0.1.0",
+    "openai": "^4.20.1",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
